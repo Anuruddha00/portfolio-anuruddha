@@ -123,7 +123,6 @@ a{
             &Title{
                 font-size: 20px;
             }
-
             &Intro{
                 height: fit-content;
 
@@ -178,6 +177,27 @@ a{
         }
         @media(max-width: 1200px){
             width: 95%;
+
+            &Details{
+                display: flex;
+                flex-direction: column;
+
+                &About{
+                    border-bottom:1px solid $secondary-color;
+                    border-right: none;
+                   
+                    h2{
+                        text-align: center;
+                    }
+                }
+                &Expertise{
+                    margin-left: 10px;
+
+                    h2{
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
     .footer{
@@ -190,6 +210,9 @@ a{
             text-align: center;
             font-weight: bold;
           
+        }
+        @media(max-width: 1200px){
+            width: 95%;
         }
     }
 }
