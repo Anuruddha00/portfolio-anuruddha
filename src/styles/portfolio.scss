@@ -1,0 +1,195 @@
+@import 'variable.scss';
+
+body{
+    font-family: 'Varela Round', sans-serif; 
+    padding: 0;
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+
+.container{
+   
+
+   .primary{
+        width: 1200px;
+        margin: 0 auto;
+        color: $primary-color;
+
+        &Title{
+            font-size: 56px;
+            text-align: center;
+        }
+        &Intro{
+            border: 1px solid $border-color;
+            box-shadow: 10px 10px 5px grey;
+            height: 60vh;
+            background:rgb(179, 79, 79);
+            background: linear-gradient(to left, rgb(93, 136, 192) , rgb(238, 233, 233));
+
+            &Navbar{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $border-color;
+
+                &Square{
+                    display: flex;
+                    padding: 10px;
+                    
+                    &One{
+                        content: '';
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        background-color: #FC6058;
+                    }
+                    &Two{
+                        content: '';
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        background-color: #fec02f;
+                    }
+                    &Three{
+                        content: '';
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 5px;
+                        margin-left: 5px;
+                        background-color: #2aca3e;
+                    }
+                }
+                &Contact{
+                    padding: 10px;
+                    cursor: pointer;
+                    font-weight: bold;
+
+                    a{
+                        color: $main-text;
+                        font-family:'Merriweather' ;
+                    }
+                }
+                
+            }
+            &About{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 30px;
+     
+                &Image{
+                    display: block;
+                    margin: 0 auto;
+
+                    height:230px;
+                    width: 230px;
+                    object-fit: cover;
+                    border: 3px solid rgb(73, 72, 72);
+                    box-shadow: $box-shadow;
+                }
+                &Description{
+                    text-align: center;
+                    width: 300px;
+                    background: #ffffff;
+                    border: 2px solid $border-color;
+                    box-shadow: 10px 10px grey;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+
+                    h3{
+                        font-size: 20px;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1200px){
+            width: 95%;
+
+            &Title{
+                font-size: 20px;
+            }
+
+            &Intro{
+                height: fit-content;
+
+                &About{
+                    display: flex;
+                    flex-direction: column;
+
+                    &Description{
+                        margin-left: 70px;  
+                    }
+                }
+            }
+        }
+    }
+    .secondary{
+        width: 1200px;
+        margin: 0 auto;
+        color: $primary-color;
+
+        &Details{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 20px;
+           
+
+            &About{
+                border-right: 1px solid $secondary-color;
+
+            }
+            &Expertise{
+                margin-left: 90px;
+
+                &Language{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    background-color: rgb(44, 44, 44);
+                    background: linear-gradient(to right,rgb(107, 107, 106) , rgb(146, 146, 143));
+                    border-radius: 5px;
+                    height: 20vh;
+                    width: 60vh;
+                    
+
+                    ul{
+                        list-style: none;
+                        color: $main-text;
+                    }
+                    li{
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+        @media(max-width: 1200px){
+            width: 95%;
+        }
+    }
+    .footer{
+        width: 1200px;
+        margin: 0 auto;
+        color: $primary-color;
+        border-top: 1px solid rgb(126, 125, 125);
+
+        &Url{
+            text-align: center;
+            font-weight: bold;
+          
+        }
+    }
+}
