@@ -33,7 +33,7 @@ function Portfolio() {
         <div className='secondaryDetails'>
           <div className='secondaryDetailsAbout'>
             <h2>More about me !</h2>
-            <p>An adaptable, responsible, self-motivated and organized <br/> graduate in B.Sc. Special (Hons) in Information Technology at SLIIT.<br/><br/>
+            <p>An adaptable, responsible, self-motivated and organized  graduate in B.Sc. Special (Hons) in Information Technology at SLIIT.<br/><br/>
               I build new projects using react. Those projects were uploaded <br/> here - <a target='_blank' href='https://github.com/Anuruddha00'>GitHub</a></p>
           </div>
           <div className='secondaryDetailsExpertise'>

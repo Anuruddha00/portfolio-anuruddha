@@ -135,7 +135,8 @@ a{
                     flex-direction: column;
 
                     &Description{
-                        margin-left: 70px;  
+                        margin-left: 10px;
+                        width: 270px; 
                     }
                 }
                 
@@ -201,6 +202,9 @@ a{
                     h2{
                         text-align: center;
                     }
+                    &Language{
+                      width: 45vh;
+                    }
                 }
             }
         }
@@ -217,7 +221,7 @@ a{
           
         }
         @media(max-width: 1200px){
-            width: 95%;
+            width: 90%;
         }
     }
 }
