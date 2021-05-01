@@ -76,11 +76,12 @@ a{
                 &Contact{
                     padding: 10px;
                     cursor: pointer;
-                    font-weight: bold;
 
+                    &:hover{
+                        transform: scale(1.2);
+                    }
                     a{
                         color: $main-text;
-                        font-family:'Merriweather' ;
                     }
                 }
                 
@@ -99,6 +100,8 @@ a{
                     object-fit: cover;
                     border: 3px solid rgb(73, 72, 72);
                     box-shadow: $box-shadow;
+
+                   
                 }
                 &Description{
                     text-align: center;
@@ -118,7 +121,8 @@ a{
             }
         }
         @media(max-width: 1200px){
-            width: 95%;
+            width: 80%;
+            margin:35px;
 
             &Title{
                 font-size: 20px;
@@ -134,6 +138,7 @@ a{
                         margin-left: 70px;  
                     }
                 }
+                
             }
         }
     }
@@ -149,8 +154,8 @@ a{
            
 
             &About{
-                border-right: 1px solid $secondary-color;
-
+                border-right: 1px solid rgb(22, 253, 195);
+                
             }
             &Expertise{
                 margin-left: 90px;
@@ -183,7 +188,7 @@ a{
                 flex-direction: column;
 
                 &About{
-                    border-bottom:1px solid $secondary-color;
+                    border-bottom:1px solid rgb(22, 253, 195) ;
                     border-right: none;
                    
                     h2{
@@ -204,11 +209,11 @@ a{
         width: 1200px;
         margin: 0 auto;
         color: $primary-color;
-        border-top: 1px solid rgb(126, 125, 125);
+        border-top: 1px solid rgb(22, 253, 195);
 
         &Url{
             text-align: center;
-            font-weight: bold;
+            font-weight: bold;       
           
         }
         @media(max-width: 1200px){

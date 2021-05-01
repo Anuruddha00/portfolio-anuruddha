@@ -1,9 +1,12 @@
 import React from 'react';
 
 const contact = ()=>{
-    return(
+    return(  
         <div>
-            <h1>0766363401</h1>
+            <h1>Contact</h1>
+            <form>
+                
+            </form>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/portfolio.scss';
-import Contact from '../components/contact';
+import {Link} from 'react-router-dom';
 
 function Portfolio() {
   return (
@@ -16,7 +16,9 @@ function Portfolio() {
               <div className='primaryIntroNavbarSquareTwo'></div>
               <div className='primaryIntroNavbarSquareThree'></div>
             </div>
-            <div className='primaryIntroNavbarContact'><a href=''>Contact</a></div>
+            <div className='primaryIntroNavbarContact'>
+              <Link target='_blank' to='/Contact'>Contact</Link>
+            </div>
           </nav>
           <div className='primaryIntroAbout'>
             <img className='primaryIntroAboutImage' src='./assets/profile1.jpg'/>
