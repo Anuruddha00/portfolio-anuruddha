@@ -5,3 +5,46 @@ body{
     font-size: 0.875rem;
 }
 
+
+.contact{
+    
+    &Form{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 50px auto;
+        padding: 60px; 
+        background: #b6b4b4;
+        background: linear-gradient(to right, #d3d1d1 , #84a4b3);
+        border-radius: 10px;
+
+        &Title{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        input{  
+            margin-bottom: 15px;
+            border-style: none;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        &Message{
+            height: 40px;
+        }
+        &Send{
+            margin: 10px;
+            width: fit-content;
+            padding: 7px 20px 7px 20px;
+            align-self: center;
+            background: rgb(221, 38, 78);
+            border-style: none;
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(0.98);
+            }
+        }
+    }
+}

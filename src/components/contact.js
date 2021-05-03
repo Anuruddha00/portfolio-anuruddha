@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './contact.scss';
 
-const contact = ()=>{
-    return(  
-        <div>
-            <h1>Contact</h1>
-            <form>
-                
-            </form>
-        </div>
-    )
+class Contact extends Component{
+
+
+    switchNameHandler=()=>{
+        alert('Successfully !')
+    }
+
+    render(){
+        return(  
+            <div className='contact'>
+                <form className='contactForm'>
+                    <h1 className='contactFormTitle'>Contact</h1>
+                    Name: <input type='text' placeholder='Name' />
+                    Subject: <input type='text' placeholder='Subject'/>
+                    Email: <input type='text' placeholder='Email'/>
+                    Message: <input className='contactFormMessage' type='text' placeholder='Message'/>
+                    <button className='contactFormSend' onClick={this.switchNameHandler}>Send</button>
+                </form>
+            </div>
+        )
+    }   
 }
-export default contact;
+export default Contact;
