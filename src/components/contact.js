@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import './contact.scss';
+import axios from '../axios-contact';
 
 class Contact extends Component{
 
 
-    switchNameHandler=()=>{
-        alert('Successfully !')
+    contactDataHandler=(event)=>{
+        const contact={
+            Name:'ssa',
+            Subject:event.target.value,
+            Email:event.target.value,
+            Massage:event.target.value
+
+        }
+        axios.post('./contact.json',contact)
+        .then(response=>console.log(response))
+        .catch(error=>console.log(error))
     }
 
     render(){
@@ -17,7 +27,7 @@ class Contact extends Component{
                     Subject: <input type='text' placeholder='Subject'/>
                     Email: <input type='text' placeholder='Email'/>
                     Message: <input className='contactFormMessage' type='text' placeholder='Message'/>
-                    <button className='contactFormSend' onClick={this.switchNameHandler}>Send</button>
+                    <button className='contactFormSend' onClick={this.contactDataHandler}>Send</button>
                 </form>
             </div>
         )
