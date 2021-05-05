@@ -17,7 +17,7 @@ function Portfolio() {
               <div className='primaryIntroNavbarSquareThree'></div>
             </div>
             <div className='primaryIntroNavbarContact'>
-              <Link target='_blank' to='/Contact'>Contact</Link>
+              <Link target='_blank' to='/Contact'>✉ Contact</Link>
             </div>
           </nav>
           <div className='primaryIntroAbout'>
@@ -38,7 +38,7 @@ function Portfolio() {
           </div>
           <div className='secondaryDetailsExpertise'>
             <h2>TOP EXPERTISE</h2>
-            <p>Web developer (React) : <a target='_blank' href='./assets/resume.pdf'>Download Resume</a></p>
+            <p>Web developer (React) : <a target='_blank' href='./assets/resume.pdf'>Download Resume </a></p>
             <div className='secondaryDetailsExpertiseLanguage'>
               <ul>
                 <li>ReactJS</li>
