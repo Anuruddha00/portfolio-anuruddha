@@ -44,12 +44,13 @@ function Portfolio() {
                 <li>ReactJS</li>
                 <li>PHP</li>
                 <li>Java</li>
-                <li>HTML/CSS</li>
+                <li>HTML</li>
               </ul>
               <ul>
                 <li>Octave</li>
                 <li>Git</li>
                 <li>SQL</li>
+                <li>SCSS</li>
               </ul>
             </div>
           </div>
